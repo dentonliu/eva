@@ -10,7 +10,7 @@ Tags: flat, note wall, two-columns
 */
 
 
-/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+/* Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
 
 html, body, div, span, applet, object, iframe,
@@ -55,4 +55,21 @@ table {
 }
 a img {
 	border: none;
+}
+
+
+/* Global elements setting */
+body{
+	background-color: #eee;
+	text-align:center;
+}
+
+#wrapper{
+	width:960px;
+	background-color: #FFF;
+	margin: 10px auto;
+}
+
+#header{
+	height:40px;
 }
