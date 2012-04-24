@@ -1,4 +1,4 @@
-/*
+﻿/*
 Theme Name: EVA Flat
 Theme URI: http://wordpress.org/
 Description: This theme is only used for my own site.
@@ -58,14 +58,25 @@ a img {
 }
 
 
-/* Global elements setting */
+/* Elements customization */
 body{
 	background-color: #eee;
-	text-align:center;
+	text-align: center;
+	font-size: 12px;
+	font-family: Arial, 宋体;
+	line-height: 18pt;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix{
+	clear: both;
 }
 
 #wrapper{
-	width:960px;
+	width: 960px;
 	background-color: #FFF;
 	margin: 10px auto;
 }
@@ -73,3 +84,51 @@ body{
 #header{
 	height:40px;
 }
+
+#header #masthead{
+	margin: 10px 10px;
+	float: left;
+	width: 940px;
+}
+
+#header #masthead #searchbar{
+	margin-left: 250px;
+	float: left;
+}
+
+#header #masthead #searchbar #searchform #s{
+	width: 300px;
+}
+#header #masthead #account-info{
+	display: block;
+	margin-left: 230px;
+	float: left;
+}
+
+#header #masthead #account-info a{
+	margin-right: 5px;
+}
+
+#main{
+	width: 960px;
+}
+
+#main #container{
+	width: 700px;
+	float: left;
+}
+
+#main #primary{
+	width: 260px;
+	float: left;
+}
+
+#footer{
+	height: 58px;
+}
+
+#footer #colophon{
+	margin-top: 10px;
+	height: 48px;
+}
+

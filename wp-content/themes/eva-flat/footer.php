@@ -11,7 +11,7 @@
  */
 ?>
 	</div><!-- #main -->
-
+	<div class="clearfix"></div>
 	<div id="footer" role="contentinfo">
 		<div id="colophon">
 

@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * The main template file.
  *
@@ -12,7 +12,7 @@ get_header(); ?>
 
 		<div id="container">
 			<div id="content" role="main">
-
+			测试数据
 			<?php
 			/* Run the loop to output the posts.
 			 * If you want to overload this in a child theme then include a file

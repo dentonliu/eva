@@ -60,10 +60,10 @@
 				<?php get_search_form(); ?>
 			</div><!--#searchbar-->
 			<div id="account-info">
-				<a href="#">登录</a>
-				<a href="#">注册</a>
+				<a href="<?php echo home_url( '/wp-login.php' ); ?>">登录</a>
+				<a href="<?php echo home_url( '/wp-login.php?action=register'); ?>">注册</a>
 			</div><!--#account-info-->
 		</div><!-- #masthead -->
 	</div><!-- #header -->
-
+	<div class="clearfix"></div>
 	<div id="main">
