@@ -11,8 +11,8 @@
  */
 ?>
 	</div><!-- #main -->
-	<div class="clearfix"></div>
-	<div id="footer" role="contentinfo">
+	<div class="clear"></div>
+	<div id="footer" role="contentinfo" class="grid_12">
 		<div id="colophon">
 
 <?php

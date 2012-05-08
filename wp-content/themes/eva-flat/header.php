@@ -51,19 +51,16 @@
 	wp_head();
 ?>
 </head>
-
-<body <?php body_class(); ?>>
-<div id="wrapper" class="hfeed">
-	<div id="header">
-		<div id="masthead">
-			<div id="searchbar" role="search">
-				<?php get_search_form(); ?>
-			</div><!--#searchbar-->
-			<div id="account-info">
-				<a href="<?php echo home_url( '/wp-login.php' ); ?>">登录</a>
-				<a href="<?php echo home_url( '/wp-login.php?action=register'); ?>">注册</a>
-			</div><!--#account-info-->
-		</div><!-- #masthead -->
+<body <?php //body_class(); ?>>
+<div id="wrapper" class="container_12">
+	<div id="header" class="grid_12">
+		<div id="searchbar" role="search" class="push_3 grid_6">
+			<?php get_search_form(); ?>
+		</div><!-- #searchbar -->
+		<div id="account-info" class="push_4 grid_2">
+			<a href="<?php echo home_url( '/wp-login.php' ); ?>">登录</a>
+			<a href="<?php echo home_url( '/wp-login.php?action=register'); ?>">注册</a>
+		</div><!-- #account-info -->
 	</div><!-- #header -->
-	<div class="clearfix"></div>
-	<div id="main">
+	<div class="clear"></div>
+	<div id="main" class="grid_12">
