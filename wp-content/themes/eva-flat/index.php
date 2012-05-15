@@ -10,7 +10,6 @@
 
 get_header(); ?>
 		<div id="content" role="main" class="grid_9">
-		测试数据
 		<?php
 		/* Run the loop to output the posts.
 		 * If you want to overload this in a child theme then include a file
