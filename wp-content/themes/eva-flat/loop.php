@@ -29,7 +29,7 @@
 <?php if ( function_exists( 'get_post_format' ) && 'gallery' == get_post_format( $post->ID ) ): ?>
 <?php elseif ( function_exists( 'get_post_format' ) && 'aside' == get_post_format( $post->ID ) ): ?>
 <?php else: ?>
-<div id="post-<?php the_id(); ?>" class="grid_2 entry">
+<div id="post-<?php the_id(); ?>" class="entry">
   <a href="<?php the_permalink(); ?>" class="entry_title"><?php the_title(); ?></a>
   <div class="entry_content"><?php the_content(); ?></div>
 </div>

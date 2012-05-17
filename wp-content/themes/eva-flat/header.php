@@ -35,6 +35,10 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/third-party/960-grid/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/third-party/960-grid/text.css" />
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/third-party/jquery/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/script.js"></script>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
 	/* We add some JavaScript to pages with the comment form
@@ -52,15 +56,15 @@
 ?>
 </head>
 <body <?php //body_class(); ?>>
-<div id="wrapper" class="container_12">
-	<div id="header" class="grid_12">
-		<div id="searchbar" role="search" class="push_3 grid_6">
+<div id="wrapper" class="">
+	<div id="header" class="">
+		<div id="searchbar" role="search" class=" ">
 			<?php get_search_form(); ?>
 		</div><!-- #searchbar -->
-		<div id="account-info" class="push_4 grid_2">
+		<div id="account-info" class=" ">
 			<a href="<?php echo home_url( '/wp-login.php' ); ?>">登录</a>
 			<a href="<?php echo home_url( '/wp-login.php?action=register'); ?>">注册</a>
 		</div><!-- #account-info -->
 	</div><!-- #header -->
 	<div class="clear"></div>
-	<div id="main" class="grid_12">
+	<div id="main" class="">

@@ -9,41 +9,59 @@ License URI: license.txt
 Tags: flat, note wall, two-columns
 */
 
-/* Refer to 960 grid css */
-@import url(third-party/960-grid/960.css);
-@import url(third-party/960-grid/reset.css);
-@import url(third-party/960-grid/text.css);
-
 /* Global setting */
 body{
 	background-color: #eee;
+	min-width: 1024px;
 }
 
 a {
 	text-decoration: none;
 }
 
-ul , ol{
+body ul, body ol{
 	list-style: none;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 /* Tags customization */
 #wrapper{
-	background-color: #FFF;
+	background-color: #fff;
+	width: 1024px;
+	margin: 0 auto;
+	zoom: 1;
+}
+
+#wrapper div{
+	display: inline;
 }
 
 #header{
 	padding: 12px 0;
-	background-color:red;
+	background-color: red;
+	float: left;
+	width: 100%;
 }
 
 #header #searchbar{
+	float: left;
+	margin-left: 312px;
 }
 
 #header #searchbar #searchform #s{
 	width: 300px;
 }
 #header #account-info{
+	float: left;
+	margin-left: 40px;
 }
 
 #header #account-info a{
@@ -52,23 +70,53 @@ ul , ol{
 
 #main{
 	background-color: yellow;
+	position: relative;
+	float: left;
+	width: 100%;
 }
 
 #main #content{
 	background-color: green;
+	float: left;
+	width: 100%;
 }
 
-#main #primary{
+#main #content .entry{
+	float: left;
+	width: 256px;
+}
+
+#main #product_list{
 	background-color: pink;
+	position: absolute;
+	right: 0;
+	width: 20px;
+	z-index: 1;
+}
+
+#main #product_list #list_switcher{
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	float: left;
+	position: relative;
+	top: 100px;
+}
+
+#main #product_list ul{
+	display: none;
 }
 
 #footer{
 	height: 58px;
 	background-color: blue;
+	float: left;
+	width: 100%;
 }
 
 #footer #colophon{
 	margin-top: 10px;
 	height: 48px;
+	float: left;
 }
 

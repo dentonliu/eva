@@ -12,7 +12,7 @@
 ?>
 	</div><!-- #main -->
 	<div class="clear"></div>
-	<div id="footer" role="contentinfo" class="grid_12">
+	<div id="footer" role="contentinfo" class="">
 		<div id="colophon">
 
 <?php
