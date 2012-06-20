@@ -11,8 +11,9 @@ Tags: flat, note wall, two-columns
 
 /* Global setting */
 body{
-	background-color: #eee;
+	background: #eee url(img/main-bg.jpg) repeat fixed top;
 	min-width: 1024px;
+	text-align: center;
 }
 
 a {
@@ -34,7 +35,7 @@ body ul, body ol{
 
 /* Tags customization */
 #wrapper{
-	background-color: #fff;
+	background-color: transparent;
 	width: 1024px;
 	margin: 0 auto;
 	zoom: 1;
@@ -46,14 +47,18 @@ body ul, body ol{
 
 #header{
 	padding: 12px 0;
-	background-color: red;
-	float: left;
+	background-color: transparent;
 	width: 100%;
+}
+
+#header #logo{
+	float: left;
+	width: 300px;
 }
 
 #header #searchbar{
 	float: left;
-	margin-left: 312px;
+	margin-left: 12px;
 }
 
 #header #searchbar #searchform #s{
@@ -61,7 +66,7 @@ body ul, body ol{
 }
 #header #account-info{
 	float: left;
-	margin-left: 40px;
+	margin-left: 240px;
 }
 
 #header #account-info a{
@@ -69,14 +74,15 @@ body ul, body ol{
 }
 
 #main{
-	background-color: yellow;
+	background-color: #eee;
 	position: relative;
 	float: left;
 	width: 100%;
+	padding: 10px 10px;
 }
 
 #main #content{
-	background-color: green;
+	background-color: transparent;
 	float: left;
 	width: 100%;
 }
@@ -84,13 +90,21 @@ body ul, body ol{
 #main #content .entry{
 	float: left;
 	width: 256px;
+	height: 256px;
+	overflow: hidden;
+	background-color: FDF5CB;
+	-webkit-box-shadow: 4px 4px 2px #aaa; /*Safri and Chrome*/
+	-moz-box-shadow: 4px 4px 2px #aaa; /*Firefox*/
+	-o-box-shadow: 4px 4px 2px #aaa; /*Opera*/
+	box-shadow: 4px 4px 2px #aaa; /*IE*/
+	
+	behavior: url(ie-css3.htc);
 }
 
 #main #product_list{
 	background-color: pink;
 	position: absolute;
 	right: 0;
-	width: 20px;
 	z-index: 1;
 }
 
@@ -109,7 +123,7 @@ body ul, body ol{
 
 #footer{
 	height: 58px;
-	background-color: blue;
+	background-color: transparent;
 	float: left;
 	width: 100%;
 }

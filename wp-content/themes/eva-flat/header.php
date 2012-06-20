@@ -58,6 +58,9 @@
 <body <?php //body_class(); ?>>
 <div id="wrapper" class="">
 	<div id="header" class="">
+		<div id="logo">
+			<h1>EVA</h1>
+		</div>
 		<div id="searchbar" role="search" class=" ">
 			<?php get_search_form(); ?>
 		</div><!-- #searchbar -->
