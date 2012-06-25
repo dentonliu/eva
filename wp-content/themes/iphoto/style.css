@@ -98,6 +98,7 @@ a:hover {
 #header {
 	width:100%;
 	font-size:13px;
+	text-align: center;
 	position:relative;
 	text-shadow:0 1px 0 white;
 	background:#F9F9F9;
@@ -134,8 +135,9 @@ a:hover {
 }
 #header-box {
 	margin:0 auto;
+	border-bottom: 1px solid #bbb;
 	position:relative;
-	_z-index:999
+	_z-index:1
 }
 #logo {
 	float:left;
@@ -146,7 +148,7 @@ a:hover {
 	display:block;
 	height:50px
 }
-#nav,#nav ul {
+/*#nav,#nav ul {
 	margin:0;
 	padding:0;
 	list-style-type:none;
@@ -176,6 +178,14 @@ a:hover {
 	margin-right:5px;
 	color:#666;
 	text-shadow:0 1px 0 white
+}*/
+#header #search-bar{
+	float: left;
+	margin-left: 300px;
+	margin-top: 14px;
+}
+#header #search-bar #searchform #s{
+	width: 300px;
 }
 #login,#logined {
 	float:right;
@@ -226,7 +236,7 @@ a:hover {
 	left:50%;
 	margin-left:-170px;
 	margin-top:-50px;
-	z-index:99999990;
+	z-index:99;
 	width:340px;
 	height:210p;
 	background-color:#f0f0f0;
@@ -286,7 +296,7 @@ a:hover {
 }
 #logined {
 	position:relative;
-	z-index:999
+	z-index:1
 }
 #info {
 	display:block;
@@ -324,7 +334,7 @@ a:hover {
 	position:absolute;
 	top:50px;
 	right:0;
-	z-index:999;
+	z-index:1;
 	width:113px;
 	background-color:#fafafa;
 	overflow:hidden
@@ -338,6 +348,25 @@ a:hover {
 }
 #info-content.hidden {
 	display:none
+}
+#header #recommand{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 9px;
+}
+#header #recommand #categories li{
+	display: inline;
+	position: relative;
+	margin: 2px 5px;
+}
+#header #recommand #categories li ul{
+	width: 200px;
+	position: absolute;
+	top: 86px;
+	left: -8px;
+	/*display: none;*/
+	z-index: 1;
 }
 #cate {
 	display:none
@@ -898,58 +927,59 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset;
 	padding-top:20px
 }
 #scrollTop{
-position: fixed;
-z-index:999;
-right:10px;
-bottom:-60px;
-width: 60px;
-height: 60px;
--o-transition: bottom 250ms ease-in-out;
--moz-transition: bottom 250ms ease-in-out;
--webkit-transition: bottom 250ms ease-in-out;
+	position: fixed;
+	z-index:1;
+	right:10px;
+	bottom:-60px;
+	width: 60px;
+	height: 60px;
+	-o-transition: bottom 250ms ease-in-out;
+	-moz-transition: bottom 250ms ease-in-out;
+	-webkit-transition: bottom 250ms ease-in-out;
 }
 #scrollTop.active{
-bottom:0px;
+	bottom:0px;
 }
 #scrollTop a {
-display:block;
-padding:10px;
-text-align: center;
-color:#999;
-text-shadow: 0 1px 0 white;
-border: 1px solid #C4C6CA;
-text-decoration:none;
-background: #F7F9FA;
-background: -moz-linear-gradient(top,rgba(247, 249, 250, 1) 0%,rgba(240, 240, 240, 1) 100%);
-background: -webkit-linear-gradient(top,rgba(247, 249, 250, 1) 0%,rgba(240, 240, 240, 1) 100%);
-background: -o-linear-gradient(top,rgba(247, 249, 250, 1) 0%,rgba(240, 240, 240, 1) 100%);
-background: -ms-linear-gradient(top,rgba(247, 249, 250, 1) 0%,rgba(240, 240, 240, 1) 100%);
-background: linear-gradient(top,rgba(247, 249, 250, 1) 0%,rgba(240, 240, 240, 1) 100%);
-border-radius:2px 2px 0 0;
--moz-border-radius:2px 2px 0 0;
--webkit-border-radius:2px 2px 0 0;
+	display:block;
+	padding:10px;
+	text-align: center;
+	color:#999;
+	text-shadow: 0 1px 0 white;
+	border: 1px solid #C4C6CA;
+	text-decoration:none;
+	background: #F7F9FA;
+	background: -moz-linear-gradient(top,rgba(247, 249, 250, 1) 0%,rgba(240, 240, 240, 1) 100%);
+	background: -webkit-linear-gradient(top,rgba(247, 249, 250, 1) 0%,rgba(240, 240, 240, 1) 100%);
+	background: -o-linear-gradient(top,rgba(247, 249, 250, 1) 0%,rgba(240, 240, 240, 1) 100%);
+	background: -ms-linear-gradient(top,rgba(247, 249, 250, 1) 0%,rgba(240, 240, 240, 1) 100%);
+	background: linear-gradient(top,rgba(247, 249, 250, 1) 0%,rgba(240, 240, 240, 1) 100%);
+	border-radius:2px 2px 0 0;
+	-moz-border-radius:2px 2px 0 0;
+	-webkit-border-radius:2px 2px 0 0;
 }
 #scrollTop a:hover{
-background-color: #F3F1F1;
-background-image: -webkit-gradient(linear,left top,left bottom,from(white),to(#F3F1F1));
-background-image: -webkit-linear-gradient(top,white,#F3F1F1);
-background-image: -moz-linear-gradient(top,white,#F3F1F1);
-background-image: -ms-linear-gradient(top,white,#F3F1F1);
-background-image: -o-linear-gradient(top,white,#F3F1F1);
-background-image: linear-gradient(top,white,#F3F1F1);
--webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
--moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
-border: 1px solid #C3C3C3;
--webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5),0 1px 0 rgba(215,238,239,.5);
--moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5),0 1px 0 rgba(215,238,239,.5);
-box-shadow: inset 0 1px 0 rgba(255,255,255,.5),0 1px 0 rgba(215,238,239,.5);
+	background-color: #F3F1F1;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(white),to(#F3F1F1));
+	background-image: -webkit-linear-gradient(top,white,#F3F1F1);
+	background-image: -moz-linear-gradient(top,white,#F3F1F1);
+	background-image: -ms-linear-gradient(top,white,#F3F1F1);
+	background-image: -o-linear-gradient(top,white,#F3F1F1);
+	background-image: linear-gradient(top,white,#F3F1F1);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+	border: 1px solid #C3C3C3;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.5),0 1px 0 rgba(215,238,239,.5);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.5),0 1px 0 rgba(215,238,239,.5);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.5),0 1px 0 rgba(215,238,239,.5);
 }
-#scrollTop a:active{-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
--moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset;
--ms-box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset;
--o-box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset;
-box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset;
+#scrollTop a:active{
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset;
+	-ms-box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset;
+	-o-box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset;
 }
 #container,#pagenavi,#submit,#footer,.navigation,.post-share,#post-related {
 	user-select:none;
@@ -964,7 +994,7 @@ box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset;
 	left:0;
 	width:100%;
 	display:none;
-	z-index:9999999
+	z-index:9
 }
 #ph_lay,#login-lay {
 	height:100%;
