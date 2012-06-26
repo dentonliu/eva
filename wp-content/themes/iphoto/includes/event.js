@@ -4,7 +4,7 @@ $(document).ready(function(){
 		$("#category-all-list").show();
 	});
 	
-	$("#category-all-link").mouseout(
+	$("#categories").mouseout(
 	function(){
 		$("#category-all-list").hide();
 	});
